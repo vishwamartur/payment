@@ -255,8 +255,8 @@ export default function Home() {
           {/* Status message */}
           {message && (
             <div className={`mb-6 p-4 rounded-xl text-center text-sm font-medium ${paymentStatus === 'success'
-                ? 'bg-green-500/10 text-green-400 border border-green-500/20'
-                : 'bg-red-500/10 text-red-400 border border-red-500/20'
+              ? 'bg-green-500/10 text-green-400 border border-green-500/20'
+              : 'bg-red-500/10 text-red-400 border border-red-500/20'
               }`}>
               {message}
             </div>
@@ -318,6 +318,25 @@ export default function Home() {
           <p className="text-xs text-gray-600 mt-2">
             Your payments are secured with 256-bit encryption
           </p>
+
+          {/* Policy Links */}
+          <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-gray-500">
+            <a href="/privacy-policy" className="hover:text-indigo-400 transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-gray-700">•</span>
+            <a href="/terms-conditions" className="hover:text-indigo-400 transition-colors">
+              Terms & Conditions
+            </a>
+            <span className="text-gray-700">•</span>
+            <a href="/refund-policy" className="hover:text-indigo-400 transition-colors">
+              Refund Policy
+            </a>
+            <span className="text-gray-700">•</span>
+            <a href="/contact" className="hover:text-indigo-400 transition-colors">
+              Contact Us
+            </a>
+          </div>
         </div>
       </main>
     </div>
