@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PayFlow - Seamless Payments",
-  description: "Fast, secure, and hassle-free payments powered by Razorpay",
+  title: "NICE Traders - Authorized UltraTech Dealer",
+  description: "UltraTech Building Solutions - Cement, Birla White Putty, Tile Adhesives, Waterproofing & more. Fast, secure payments powered by Razorpay.",
 };
 
 export default function RootLayout({
@@ -23,9 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
